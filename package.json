@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
     "build":"tsc",
-    "start": "cross-env ENV_MODE='production' yarn build && node ./dist/server.js"
+    "start": "cross-env ENV_MODE='production' npm run build && node ./dist/server.js"
   },
   "keywords": [
     "Fingerprint",
