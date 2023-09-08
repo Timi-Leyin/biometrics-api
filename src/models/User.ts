@@ -1,5 +1,6 @@
 import { DataTypes } from "sequelize";
 import db from "../config/db";
+import { ROLES } from "../config/main";
 
 const User = db.define("User", {
   uuid: {
@@ -19,12 +20,16 @@ const User = db.define("User", {
     allowNull: false,
     unique: true,
     validate: {
-      isEmail: true, // Validate email format using Sequelize
+      isEmail: true, 
     },
   },
   role: {
-    type: DataTypes.STRING,
-    defaultValue: "admin",
+    type: DataTypes.INTEGER,
+    defaultValue: ROLES.moderator,
+  },
+  root: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: false,
   },
 });
 

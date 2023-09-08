@@ -17,7 +17,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(helmet());
 app.use(cors());
 app.use(morgan("combined"));
-app.use(record(process.env.REQLOG_API_KEY as string))
+
+// PRODUCTION SPECIFY CODE
+if (process.env.ENV_MODE === "production") {
+  app.use(record(process.env.REQLOG_API_KEY as string));
+}
 
 app.get("/", welcome);
 app.post("/login", loginValidation, validate, login);
