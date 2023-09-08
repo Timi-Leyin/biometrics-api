@@ -2,11 +2,13 @@
   "name": "fingerprint-api",
   "version": "0.0.1",
   "description": "API service for biometrics attendance management system",
-  "main": "server.ts",
+  "main": "./dist/server.js",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "start": "cross-env ENV_MODE='production' node server.ts"
+    "build":"tsc",
+    "start": "cross-env ENV_MODE='production' yarn build && node ./dist/server.js"
   },
   "keywords": [
     "Fingerprint",
