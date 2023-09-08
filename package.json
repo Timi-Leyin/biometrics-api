@@ -4,6 +4,9 @@
   "description": "API service for biometrics attendance management system",
   "main": "./dist/server.js",
   "type": "commonjs",
+  "engines": {
+    "node": ">=16.14"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
