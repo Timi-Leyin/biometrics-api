@@ -6,9 +6,12 @@ import morgan from "morgan";
 import { record } from "@reqlog/express";
 import errorNotFound from "./middlewares/errorNotFound";
 import login from "./controllers/login";
-import { loginValidation } from "./utils/validations";
+import { addStudentValidation, loginValidation } from "./utils/validations";
 import validate from "./middlewares/validate";
 import welcome from "./controllers/welcome";
+import addStudent from "./controllers/addStudent";
+import deleteStudent from "./controllers/deleteStudent";
+import updateStudent from "./controllers/updateStudent";
 
 /*  INITIALIZE EXPRESS APP */
 const app = express();
@@ -25,6 +28,11 @@ if (process.env.ENV_MODE === "production") {
 
 app.get("/", welcome);
 app.post("/login", loginValidation, validate, login);
+
+app.post("/student", addStudentValidation, validate, addStudent);
+app.put("/student/id", addStudentValidation, validate, updateStudent);
+app.delete("/student/:id", deleteStudent);
+
 app.use(errorNotFound);
 
 export default app;
