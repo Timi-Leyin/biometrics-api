@@ -25,6 +25,8 @@
   "dependencies": {
     "@logdrop/node": "^0.0.1",
     "@reqlog/express": "^0.1.4",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/uuid": "^9.0.3",
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",
     "dotenv": "^16.3.1",
@@ -33,10 +35,12 @@
     "express-validation": "^4.1.0",
     "express-validator": "^7.0.1",
     "graphql": "^16.8.0",
+    "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.6.0",
-    "sequelize": "^6.32.1"
+    "sequelize": "^6.32.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.3",

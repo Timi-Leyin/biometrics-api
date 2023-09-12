@@ -1,7 +1,7 @@
 import { body } from "express-validator";
 
 const loginValidation = [
-  body("username", "Username is Required").isString().trim(),
+  body("email", "Email is Required").isString().trim().isEmail().withMessage("Invalid Email"),
   body("password", "Password is Required").isString().trim(),
 ];
 

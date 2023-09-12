@@ -7,6 +7,7 @@ declare namespace NodeJS {
     SQL_USER: string;
     SQL_PASS: string;
     SQL_HOST: string;
+    JWT_SECRET:string
     // Add more environment variables here
   }
 }

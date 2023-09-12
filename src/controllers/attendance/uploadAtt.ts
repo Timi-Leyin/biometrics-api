@@ -10,7 +10,7 @@ export default async (req: any, res: Response) => {
       });
     }
 
-    if (!req.body.event.trim()) {
+    if (!req.body.event) {
       return res.status(400).json({
         msg: "Event is Required",
       });

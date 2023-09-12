@@ -1,12 +1,13 @@
 import { Request, Response } from "express";
 import User from "../../models/User";
 import { decrypt } from "../../utils/hash";
+import { createJWT } from "../../utils/token";
 
 export default async (req: Request, res: Response) => {
   try {
     const userExists = await User.findOne({
       where: {
-        username: req.body.username,
+        email: req.body.email,
       },
     });
 
@@ -18,9 +19,12 @@ export default async (req: Request, res: Response) => {
       //   IF THE PASSWORD MATCHES THE DATABASE RECORD
       if (passwordsMatch) {
         // @TODO: Generate Token
+        const token = await createJWT({
+          uuid
+        })
         return res.status(200).json({
           msg: "Login Successful",
-          token:""
+          token
         });
       }
     }

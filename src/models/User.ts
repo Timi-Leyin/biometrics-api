@@ -1,11 +1,12 @@
 import { DataTypes } from "sequelize";
 import db from "../config/db";
 import { ROLES } from "../config/main";
-
+import * as uuid from "uuid"
 const User = db.define("User", {
   uuid: {
     type: DataTypes.STRING,
     allowNull: false,
+    defaultValue:uuid.v1()
   },
   username: {
     type: DataTypes.STRING,

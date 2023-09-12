@@ -6,22 +6,20 @@ import db from "./src/config/db";
 
 // create Root User
 
-/*
-import User from "./src/models/User";
-import { encrypt } from "./src/utils/hash";
-import { ROLES } from "./src/config/main";
-(async () => {
-  User.create({
-    uuid: "12345-12345",
-    username: "originalTimi",
-    email: "originalTimi@duck.com",
-    password: await encrypt("1234"),
-    role: ROLES.admin,
-    root: true,
-  });
-})();
 
-*/
+// import User from "./src/models/User";
+// import { encrypt } from "./src/utils/hash";
+// import { ROLES } from "./src/config/main";
+// (async () => {
+//   User.create({
+//     username: "originalTimi",
+//     email: "originalTimi@duck.go",
+//     password: await encrypt("1234"),
+//     role: ROLES.admin,
+//     root: true,
+//   });
+// })();
+
 
 // Sync the model with the database (create the table if it doesn't exist)
 db.sync()

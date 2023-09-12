@@ -22,6 +22,8 @@ import uploadAtt from "./controllers/attendance/uploadAtt";
 import multer from "multer";
 import { record } from "@logdrop/node";
 import getAtt from "./controllers/attendance/getAtt";
+import deleteAtt from "./controllers/attendance/deleteAtt";
+import verifyAdmin from "./middlewares/verifyAdmin";
 
 /*  INITIALIZE EXPRESS APP */
 const app = express();
@@ -40,17 +42,18 @@ app.get("/", welcome);
 app.post("/login", loginValidation, validate, login);
 
 // STUDENTS
-app.get("/students", getStudents);
-app.get("/student/:id", getStudentById);
-app.post("/student", addStudentValidation, validate, addStudent);
-app.put("/student/:id", updateStudent);
-app.delete("/student/:id", deleteStudent);
+app.get("/students", verifyAdmin, getStudents);
+app.get("/student/:id", verifyAdmin, getStudentById);
+app.post("/student", verifyAdmin, addStudentValidation, validate, addStudent);
+app.put("/student/:id", verifyAdmin, updateStudent);
+app.delete("/student/:id", verifyAdmin, deleteStudent);
 
 // ATTENDANCE
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
-app.post("/attendance/upload", upload.array("logs", 4), uploadAtt);
-app.get("/attendance",getAtt);
+app.post("/attendance/upload", verifyAdmin, upload.array("logs", 4), uploadAtt);
+app.get("/attendance", verifyAdmin, getAtt);
+app.delete("/attendance", verifyAdmin, deleteAtt);
 
 app.use(errorNotFound);
 
