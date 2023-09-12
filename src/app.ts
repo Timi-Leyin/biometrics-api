@@ -21,6 +21,7 @@ import updateStudent from "./controllers/students/updateStudent";
 import uploadAtt from "./controllers/attendance/uploadAtt";
 import multer from "multer";
 import { record } from "@logdrop/node";
+import getAtt from "./controllers/attendance/getAtt";
 
 /*  INITIALIZE EXPRESS APP */
 const app = express();
@@ -49,6 +50,7 @@ app.delete("/student/:id", deleteStudent);
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 app.post("/attendance/upload", upload.array("logs", 4), uploadAtt);
+app.get("/attendance",getAtt);
 
 app.use(errorNotFound);
 

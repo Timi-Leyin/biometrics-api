@@ -31,9 +31,9 @@ export default async (req: any, res: Response) => {
           const log = log_arr.split("\t");
           const [no, mchn, en_no, name, mode, io_md, dateTime] = log;
           await Attendance.create({
-            uuid: String(Number(en_no)),
-            event: req.body.event,
-            name,
+            uuid: String(Number(en_no)).trim(),
+            event: req.body.event .trim(),
+            name:name.trim(),
             time: new Date(dateTime).toLocaleTimeString(),
             date: new Date(dateTime).toLocaleDateString(),
           });

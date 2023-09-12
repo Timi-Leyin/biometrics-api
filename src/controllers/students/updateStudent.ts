@@ -21,6 +21,7 @@ export default async (req: Request, res: Response) => {
         name: req.body.name,
         matric_no: req.body.matric_no,
         department: req.body.department,
+        full_name:req.body.full_name,
         level: req.body.level,
         pin: req.body.pin,
       },
