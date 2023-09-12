@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import User from "../models/User";
-import { decrypt } from "../utils/hash";
+import User from "../../models/User";
+import { decrypt } from "../../utils/hash";
 
 export default async (req: Request, res: Response) => {
   try {

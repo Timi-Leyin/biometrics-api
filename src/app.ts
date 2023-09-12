@@ -5,13 +5,16 @@ import morgan from "morgan";
 // @REQUEST LOGGER
 import { record } from "@reqlog/express";
 import errorNotFound from "./middlewares/errorNotFound";
-import login from "./controllers/login";
+import login from "./controllers/auth/login";
 import { addStudentValidation, loginValidation } from "./utils/validations";
 import validate from "./middlewares/validate";
 import welcome from "./controllers/welcome";
-import addStudent from "./controllers/addStudent";
-import deleteStudent from "./controllers/deleteStudent";
-import updateStudent from "./controllers/updateStudent";
+import addStudent from "./controllers/students/addStudent";
+import deleteStudent from "./controllers/students/deleteStudent";
+import getStudentById from "./controllers/students/getStudentById";
+import getStudents from "./controllers/students/getStudents";
+import updateStudent from "./controllers/students/updateStudent";
+
 
 /*  INITIALIZE EXPRESS APP */
 const app = express();
@@ -29,8 +32,11 @@ if (process.env.ENV_MODE === "production") {
 app.get("/", welcome);
 app.post("/login", loginValidation, validate, login);
 
+
+app.get("/student/:id", getStudentById);
+app.get("/students", getStudents);
 app.post("/student", addStudentValidation, validate, addStudent);
-app.put("/student/id", addStudentValidation, validate, updateStudent);
+app.put("/student/:id", updateStudent);
 app.delete("/student/:id", deleteStudent);
 
 app.use(errorNotFound);

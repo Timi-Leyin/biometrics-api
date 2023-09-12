@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import Student from "../models/Student";
+import Student from "../../models/Student";
 
 export default async (req: Request, res: Response) => {
   try {
@@ -16,19 +16,20 @@ export default async (req: Request, res: Response) => {
       });
     }
 
-    // await Student.update(
-    //   {
-    //     uuid: req.params.id,
-    //   },
-    //   {
-    //     uuid: req.body.uuid,
-    //     name: req.body.name,
-    //     matric_no: req.body.matric_no,
-    //     department: req.body.department,
-    //     level: req.body.level,
-    //     pin: req.body.pin,
-    //   }
-    // );
+    await Student.update(
+      {
+        name: req.body.name,
+        matric_no: req.body.matric_no,
+        department: req.body.department,
+        level: req.body.level,
+        pin: req.body.pin,
+      },
+      {
+        where: {
+          uuid: req.params.id,
+        },
+      }
+    );
 
     return res.status(200).json({
       msg: "Student Updated",
