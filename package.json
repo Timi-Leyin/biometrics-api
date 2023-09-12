@@ -10,7 +10,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "build":"tsc",
+    "build": "tsc",
     "start": "cross-env ENV_MODE='production' npm run build && node ./dist/server.js"
   },
   "keywords": [
@@ -23,6 +23,7 @@
   "author": "Timileyin Oyelekan",
   "license": "MIT",
   "dependencies": {
+    "@logdrop/node": "^0.0.1",
     "@reqlog/express": "^0.1.4",
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",
@@ -33,6 +34,7 @@
     "express-validator": "^7.0.1",
     "graphql": "^16.8.0",
     "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
     "mysql2": "^3.6.0",
     "sequelize": "^6.32.1"
   },
@@ -41,6 +43,7 @@
     "@types/cors": "^2.8.14",
     "@types/express": "^4.17.17",
     "@types/morgan": "^1.9.5",
+    "@types/multer": "^1.4.7",
     "@types/node": "^20.5.9",
     "cors": "^2.8.5",
     "helmet": "^7.0.0",

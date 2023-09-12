@@ -3,10 +3,14 @@ import helmet from "helmet";
 import cors from "cors";
 import morgan from "morgan";
 // @REQUEST LOGGER
-import { record } from "@reqlog/express";
+// import { record } from "@reqlog/express";
 import errorNotFound from "./middlewares/errorNotFound";
 import login from "./controllers/auth/login";
-import { addStudentValidation, loginValidation } from "./utils/validations";
+import {
+  addStudentValidation,
+  loginValidation,
+  uploadAttValidation,
+} from "./utils/validations";
 import validate from "./middlewares/validate";
 import welcome from "./controllers/welcome";
 import addStudent from "./controllers/students/addStudent";
@@ -14,7 +18,9 @@ import deleteStudent from "./controllers/students/deleteStudent";
 import getStudentById from "./controllers/students/getStudentById";
 import getStudents from "./controllers/students/getStudents";
 import updateStudent from "./controllers/students/updateStudent";
-
+import uploadAtt from "./controllers/attendance/uploadAtt";
+import multer from "multer";
+import { record } from "@logdrop/node";
 
 /*  INITIALIZE EXPRESS APP */
 const app = express();
@@ -32,12 +38,17 @@ if (process.env.ENV_MODE === "production") {
 app.get("/", welcome);
 app.post("/login", loginValidation, validate, login);
 
-
-app.get("/student/:id", getStudentById);
+// STUDENTS
 app.get("/students", getStudents);
+app.get("/student/:id", getStudentById);
 app.post("/student", addStudentValidation, validate, addStudent);
 app.put("/student/:id", updateStudent);
 app.delete("/student/:id", deleteStudent);
+
+// ATTENDANCE
+const storage = multer.memoryStorage();
+const upload = multer({ storage: storage });
+app.post("/attendance/upload", upload.array("logs", 4), uploadAtt);
 
 app.use(errorNotFound);
 

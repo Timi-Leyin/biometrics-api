@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 import db from "../config/db";
 
-const Attendance = db.define("Attendance", {
+const Logs = db.define("Logs", {
   uuid: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -12,19 +12,10 @@ const Attendance = db.define("Attendance", {
     allowNull: false,
   },
 
-  name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-
-  time: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  date: {
+  url: {
     type: DataTypes.STRING,
     allowNull: false,
   },
 });
 
-export default Attendance;
+export default Logs;

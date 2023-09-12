@@ -16,4 +16,10 @@ const addStudentValidation = [
   }).withMessage("Pin Minimum Length is 4").trim(),
 ];
 
-export { loginValidation, addStudentValidation };
+
+const uploadAttValidation = [
+  body("event", "Event is Required").isString().trim()
+];
+
+
+export { loginValidation, addStudentValidation, uploadAttValidation };
