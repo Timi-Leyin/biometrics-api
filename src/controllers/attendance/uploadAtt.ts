@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import fs from "fs";
 import Attendance from "../../models/Attendance";
 import Events from "../../models/Events";
+import Student from "../../models/Student";
 export default async (req: any, res: Response) => {
   try {
     if (!req.files || req.files.length === 0) {
@@ -25,6 +26,13 @@ export default async (req: any, res: Response) => {
           const log = log_arr.split("\t");
           const [no, mchn, en_no, name, mode, io_md, dateTime] = log;
           // console.log(dateTime);
+          const stInfo = await Student.findOne({
+            where:{
+              uuid:en_no
+            }
+          })
+
+          console.log(stInfo)
           const ev = dateTime.split(" ")[0] + " - " + req.body.event.trim();
 
           const eventExists = await Events.findOne({

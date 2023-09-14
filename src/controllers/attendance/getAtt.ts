@@ -48,6 +48,23 @@ export default async (req: Request, res: Response) => {
     // }
 
     const att = await Attendance.findAll(query);
+    const allStudents = await Student.findAll();
+    const att_st:Array<any> = [];
+
+    att.forEach((at)=>{
+      const attendance = at.get();
+
+      allStudents.forEach((students)=>{
+        const student = students.get();
+        if(student.uuid == attendance.uuid){
+          att_st.push({
+            ...student,
+            ...attendance
+          })
+        }
+      })
+    })
+
 
     if (Boolean(req.query.absent)) {
       // @TODO: FIND THE ABSENTS
@@ -68,7 +85,7 @@ export default async (req: Request, res: Response) => {
 
     return res.status(200).json({
       msg: "Retrieved Present Students",
-      data: att || [],
+      data: att_st || [],
     });
   } catch (error) {
     console.log(error);
