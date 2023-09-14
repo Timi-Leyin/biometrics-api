@@ -33,6 +33,7 @@ export default async (req: Request, res: Response) => {
       msg: "Credentials Not Found",
     });
   } catch (err) {
+    console.log(err)
     return res.status(500).json({ msg: "Internal Server Error" });
   }
 };

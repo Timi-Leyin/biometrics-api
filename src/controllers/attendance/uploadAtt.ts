@@ -16,12 +16,6 @@ export default async (req: any, res: Response) => {
       });
     }
 
-    await Events.findOrCreate({
-      where: {
-        name: req.body.event,
-      },
-    });
-
     req.files.forEach((file: any) => {
       const logString = file.buffer.toString().trim();
       if (logString) {
@@ -30,11 +24,29 @@ export default async (req: any, res: Response) => {
         logLn.forEach(async (log_arr: any) => {
           const log = log_arr.split("\t");
           const [no, mchn, en_no, name, mode, io_md, dateTime] = log;
+          // console.log(dateTime);
+          const ev = dateTime.split(" ")[0] + " - " + req.body.event.trim();
+
+          const eventExists = await Events.findOne({
+            where: {
+              date: dateTime.split(" ")[0],
+            },
+          });
+
+          // console.log(eventExists)
+
+          if (!eventExists) {
+            await Events.create({
+                name: ev,
+                date: dateTime.split(" ")[0],
+            });
+          }
+
           await Attendance.create({
             uuid: String(Number(en_no)).trim(),
-            event: req.body.event .trim(),
-            name:name.trim(),
-            time: new Date(dateTime).toLocaleTimeString(),
+            event: req.body.event.trim(),
+            name: name.trim(),
+            time: String(new Date(dateTime).toLocaleTimeString()),
             date: new Date(dateTime).toLocaleDateString(),
           });
         });

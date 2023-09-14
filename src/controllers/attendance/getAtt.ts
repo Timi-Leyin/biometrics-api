@@ -2,6 +2,8 @@ import { Request, Response } from "express";
 import Attendance from "../../models/Attendance";
 import { Op } from "sequelize";
 import Student from "../../models/Student";
+import sequelize from "sequelize/types/sequelize";
+import db from "../../config/db";
 
 export default async (req: Request, res: Response) => {
   try {
@@ -10,26 +12,40 @@ export default async (req: Request, res: Response) => {
     };
 
     if (req.query.name) {
-      query.where.name = req.query.name;
+      query.where.name = {
+        [Op.like]: db.literal(`'%${req.query.name}%'`),
+      };
     }
 
-    if (req.query.event) {
-      query.where.event = req.query.event;
+    // console.log(req.query)
+
+    if (req.query.event && typeof req.query.event == "string") {
+      query.where.event = req.query.event.split("-")[1].trim();
+
+      query.where.date = {
+        [Op.like]: db.literal(
+          `'%${String(
+            new Date(req.query.event.split("-")[0]).toLocaleDateString()
+          )}%'`
+        ),
+      };
+      console.log(query.where.date);
     }
+
     if (req.query.id) {
       query.where.uuid = req.query.id;
     }
 
-    if (req.query.date) {
-      query.where.date = {
-        [Op.eq]: req.query.date,
-      };
-    }
-    if (req.query.time) {
-      query.where.time = {
-        [Op.gte]: req.query.time,
-      };
-    }
+    // if (req.query.date) {
+    //   query.where.date = {
+    //     [Op.eq]: new Date(req.query.date as string).toLocaleDateString(),
+    //   };
+    // }
+    // if (req.query.time) {
+    //   query.where.time = {
+    //     [Op.gte]: req.query.time,
+    //   };
+    // }
 
     const att = await Attendance.findAll(query);
 
@@ -55,6 +71,7 @@ export default async (req: Request, res: Response) => {
       data: att || [],
     });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({ msg: "Internal Server Error" });
   }
 };
