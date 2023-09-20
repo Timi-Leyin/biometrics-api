@@ -12,6 +12,10 @@ const Events = db.define("Events", {
     allowNull: false,
     // unique:true
   },
+  dateTime: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
 });
 
 export default Events;

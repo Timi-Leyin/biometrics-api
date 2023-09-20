@@ -25,6 +25,10 @@ const Attendance = db.define("Attendance", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  dateTime: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
 });
 
 export default Attendance;

@@ -5,7 +5,8 @@ import db from "../../config/db";
 export default async (req: Request, res: Response) => {
   try {
     const ev = await Events.findAll({
-        attributes: [[db.fn('DISTINCT', db.col("name")), 'uniqueValues']],
+        attributes: [[db.fn('DISTINCT', db.col("name")), 'uniqueValues'],
+      "dateTime"],
     });
 
     res.status(200).json({

@@ -22,7 +22,7 @@ export default async (req: any, res: Response) => {
       if (logString) {
         const logLn = logString.split("\n");
         logLn.shift();
-        logLn.forEach(async (log_arr: any) => {
+        logLn.forEach(async (log_arr: any, i:number) => {
           const log = log_arr.split("\t");
           const [no, mchn, en_no, name, mode, io_md, dateTime] = log;
           // console.log(dateTime);
@@ -32,23 +32,26 @@ export default async (req: any, res: Response) => {
             }
           })
 
-          console.log(stInfo)
+          // console.log(stInfo)
           const ev = dateTime.split(" ")[0] + " - " + req.body.event.trim();
 
-          const eventExists = await Events.findOne({
-            where: {
+      if(i==0){
+        const eventExists = await Events.findOne({
+          where: {
+            date: dateTime.split(" ")[0],
+          },
+        });
+
+        // console.log(eventExists)
+
+        if (!eventExists) {
+          await Events.create({
+              name: ev,
               date: dateTime.split(" ")[0],
-            },
+              dateTime
           });
-
-          // console.log(eventExists)
-
-          if (!eventExists) {
-            await Events.create({
-                name: ev,
-                date: dateTime.split(" ")[0],
-            });
-          }
+        }
+      }
 
           await Attendance.create({
             uuid: String(Number(en_no)).trim(),
@@ -56,6 +59,7 @@ export default async (req: any, res: Response) => {
             name: name.trim(),
             time: String(new Date(dateTime).toLocaleTimeString()),
             date: new Date(dateTime).toLocaleDateString(),
+            dateTime
           });
         });
       } else {
