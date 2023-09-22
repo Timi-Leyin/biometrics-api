@@ -22,45 +22,50 @@ export default async (req: any, res: Response) => {
       if (logString) {
         const logLn = logString.split("\n");
         logLn.shift();
-        logLn.forEach(async (log_arr: any, i:number) => {
+        logLn.forEach(async (log_arr: any, i: number) => {
           const log = log_arr.split("\t");
           const [no, mchn, en_no, name, mode, io_md, dateTime] = log;
-          // console.log(dateTime);
-          const stInfo = await Student.findOne({
-            where:{
-              uuid:en_no
-            }
-          })
 
-          // console.log(stInfo)
           const ev = dateTime.split(" ")[0] + " - " + req.body.event.trim();
 
-      if(i==0){
-        const eventExists = await Events.findOne({
-          where: {
-            date: dateTime.split(" ")[0],
-          },
-        });
+          if (i == 0) {
+            const eventExists = await Events.findOne({
+              where: {
+                date: dateTime.split(" ")[0],
+              },
+            });
 
-        // console.log(eventExists)
+            if (!eventExists) {
+              await Events.create({
+                name: ev,
+                date: dateTime.split(" ")[0],
+                dateTime,
+              });
+            }
+          }
 
-        if (!eventExists) {
-          await Events.create({
-              name: ev,
-              date: dateTime.split(" ")[0],
-              dateTime
+          // Make sure the attendace record removes
+          const att_exists = await Attendance.findOne({
+            where: {
+              uuid: String(Number(en_no)).trim(),
+              event: req.body.event.trim(),
+              date: new Date(dateTime).toLocaleDateString(),
+            },
           });
-        }
-      }
 
-          await Attendance.create({
-            uuid: String(Number(en_no)).trim(),
-            event: req.body.event.trim(),
-            name: name.trim(),
-            time: String(new Date(dateTime).toLocaleTimeString()),
-            date: new Date(dateTime).toLocaleDateString(),
-            dateTime
-          });
+          if (!att_exists) {
+            await Attendance.create({
+              uuid: String(Number(en_no)).trim(),
+              event: req.body.event.trim(),
+              name: name.trim(),
+              time: String(new Date(dateTime).toLocaleTimeString()),
+              date: new Date(dateTime).toLocaleDateString(),
+              dateTime,
+            });
+          }
+          else{
+            console.log("Already Existed, Skipping")
+          }
         });
       } else {
         throw "Error in Log";

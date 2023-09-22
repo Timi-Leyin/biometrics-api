@@ -28,7 +28,14 @@ export default async (req: any, res: Response, next: NextFunction) => {
             return res.status(403).json({ msg: "Invalid User" });
           }
 
-          req.user = userExists.get();
+          const userObject = userExists.get();
+          req.user = {
+            email:userObject.email,
+            id:userObject.id,
+            uuid:userObject.uuid,
+            username:userObject.username,
+            role:userObject.role,
+          }
           next();
         })
         .catch((err) => {
