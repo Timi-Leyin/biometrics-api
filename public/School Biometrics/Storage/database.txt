@@ -1,0 +1,295 @@
+ID, Name, Matric, Department, Pin, ND
+1,Areegbe DO, R2022/620/004, Computer Science, 1171, ND1
+2,Oluwole DA,R2022/620/010,Computer Science,2580,ND1
+3,Adeogun MH,R2022/620/013,Computer Science,0000,ND1
+4,Adeogun TE,R2022/620/014,Computer Science,3050,ND1
+5,Oretan OJ,R2022/620/020,Computer Science,2003,ND1
+6,Omotoso ST,R2022/620/018,Computer Science,3009,ND1
+7,Olawale BO,R2022/620/028,Computer Science,1339,ND1
+8,George OD,R2022/620/029,Computer Science,4190,ND1
+9,Oyelekan ET,R2022/620/018,Computer Science,5500,ND1
+10,Adesina ON,R2021/510/005,Architecture,0000,ND2
+11,Atiba TS,R2021/510/006,Architecture,1234,ND2
+12,Alfred IJ,R2021/510/007,Architecture,2001,ND2
+13,Akindeinde T,R2021/510/003,Architecture,1708,ND2
+14,Omofoye TI,R2022/620/017,Computer science,3520,ND1
+15,Ezegabu SJ,R2022/620/019,Computer science,2001,ND1
+16,Edet JS,R2021/620/016,Computer Science,5876,ND2
+17,Osho PB,R2021/620/001,Computer Science,8080,ND2
+18,Ezewuike FU,R2022/620/003,Computer Science,2005,ND1
+19,Likolo TS,R2022/510/001,Architecture,2006,ND1
+20,Thomas AP,R2022/510/002,Architecture,0202,ND1
+21,Oghenerume D,R2022/510/005,Architecture,6262,ND1
+22,Oghenerume C,R2022/620/027,Computer Science,7777,ND1
+23,Ojerinde DD,R2022/420/004,Computer Engineering,1970,ND1
+24,Edgal VE,R2022/720/031,Business Admin,2002,ND1
+25,Obasi-kalu P ,R2022/420/007,Computer Engineering,8004,NDI
+26,Chiweike OC,R2022/510/004,Architecture,9999,NDI
+27,Isijola EA,R2022/420/003,Computer Engineering,0000,ND1
+28,Dada AO,R2022/610/012,SLT,2005,ND1
+29,Owolabi I ,R2022/610/016,SLT,2006,ND1
+30,Aluko E,R2022/610/021,SLT,2090,ND1
+31,Henry P,R2022/710/002,Accountancy,2006,ND1
+32,Taiwo E,R2022/610/005,SLT,2004,ND1
+33,Ejegi O,R2022/610/006,SLT,2007,ND1
+34,Oluwaluyi J,R2022/610/034,SLT,2006,ND1
+35,Shobowale MO,R2022/710/009,Accountancy,2002,ND1
+36,Grant N,R2022/710/003,Accountancy,2005,ND1
+37,Osanebi G,R2022/710/012,Accountancy,2006,ND1
+38,Olakehinde T,R2022/710/001,Accountancy,2007,ND1
+39,Ominuga Ayomide,R2021/720/027/,Business Admin,7037,ND2
+40,Ogbonuya S,R2021/720/012/,Business Admin,8021,ND2
+41,Olotu OI,R2022/620/021,Computer Science,6066,ND1
+42,OJO O,R2021/620/019,Computer Science,2019,ND2
+43,Adeseke O,R2022/610/010,SLT,2006,ND1
+44,Adekunke J,R2022/430/001,Electrical Engineering,2006,ND1
+45,Ashade AD,R2022/710/014,Accountancy,2004,ND1
+46,Akinyode FA,R2022/710/024,Accountancy,1011,ND1
+47,Omolade I,R2022/710/005,Accountancy,4144,ND1
+48,Fowowe O,R2022/610/016,SLT,2006,ND1
+49,Obasi C,R2022/720/042,Business Admin,1988,ND1
+50,Shobayo SA,R2022/710/013,Accountancy,2006,ND1
+51,Fatomiluyi VB,R2022/710/008,Accountancy,2004,ND1
+52,Awolope FM,R2022/620/010,Compuer Science,2019,ND1
+53,Friday FR,R2022/720/001,Business Admin,2022,ND1
+54,Elija BO,R2022/720/022,Business Admin,2032,ND1
+55,Dada FA,R2022/710/007,Accountancy,2003,ND1
+56,Chukwuemeka FI,R2022/710/010,Accountancy,1967,ND1
+57,Babatunde DO,R2022/720/016,Business Admin,2003,ND1
+58,Isreal JF,R2022/510/008,Architecture,2014,ND1
+59,Adeola PI,R2022/420/002,Computer Engineering,5980,ND1
+60,Ogbe MO,R2022/410/006,Accountancy,2022,ND1
+61,Oyebamiji OG,R2022/710/018,Accountancy,2005,ND1
+62,Ajibola P,R2022/710/017,Accountancy,2006,ND1
+63,Ajibade AT,R2022/710/011,Accountancy,2580,ND1
+64,Owoeye IJ,R2022/720/003,Business Admin,2003,ND1
+65,Ogunwole RA,R2022/610/033,SLT,2012,ND1 
+66,Akpotosevbe NE,R2022/720/017,Business Admin,2002,ND1
+67,Adetiba DR,R2022/720/040,Business Admin,2003,ND1
+68,Ojelua BO,R2022/610/036,SLT,2004,ND1
+69,Ogbesanya EV,R2022/041,Business Admin,2006,ND1
+70,Morolari JM,R2022/610/038,SLT,2004,ND1
+71,Badiu E,R2021/720/001,Business Admin,2001,ND2
+72,Abiodun TJ,R2022/430/007,Electrical Engineering,0550,ND1
+73,Akpofure R,R2021/720/001,Business Admin,2580,ND2*
+74,Oseghale R,R2021/610/025,SLT,2512,ND2
+75,Ajekigbe DG,R2022/720/009,Business Admin,2002,ND1
+76,Omonayajo JN,R022/720/004,Business Admin,2006,ND1
+77,Olajide VO,R2022/720/008,Business Admin,4042,ND1
+78,Osagie EA,R2022/410/013,Civil Engineering,2006,ND1
+79,Olaolu RO,R2022/520/005,Estate Management,2005,ND1
+80,Agbo SU,R2022/610/019,SLT,2000,ND1
+81,Adebayo SP,R2002/710/019,Accountancy,2005,ND1
+82,Otun EB,R2022/710/016,Accountancy,2002,ND1
+83,Olorunsola TO,R2022/610/040,SLT,2006,ND1
+84,Akhiomen FC,R2022/720/015,Business Admin,2005,ND1
+85,Oyegbila IA,R2022/720/033,Business Admin,2005,ND1
+86,Uma DO, R2022/620/015,Computer Science,2020,ND1
+87,Mustapha TE,R2022/610/041,SLT,5570,ND1
+88,Kadiri MG,R2022/430/004,Electrical Engineering,2003,ND1
+89,Olaniran EM,R2022/410/002,Civil Engineering,1222,ND1
+90,Akinsoyinu AY,R2022/430/003,Electrical Engineering,1414,ND1
+91,Idris AR,R2022/430/006,Electrical Engineering,3310,ND1
+92,Akwaji FI,R2022/620/012,Computer Science,1000,ND1
+93,Dauda E,R2022/410/004,Civil Engineering,2001,ND1
+94,Akanimo J,R2022/710/021,Accountancy,2006,ND1
+95,Ajibola SF,R022/720/006,Business Admin,2004,ND1
+96,Taiwo FM,R022/720/005,Business Admin,2003,ND1
+97,Chuks VG,R022/720/014,Business Admin,2005,ND1
+98,Eweje AJ,R2021/720/019,Business Admin,2006,ND2
+99,Okonkwo D,R2022/620/011,Computer Science,2000,ND1
+100,Ademuyiwa AE,R2022/410/001,Civil Engineering,2005,ND1
+101,Dada FM,R2022/720/043,Business Admin,2006,ND1
+102,Godswill DE,R2021/720/023,Business Admin,6364,ND2
+103,Adebayo AL,R2022/720/020/,Business Admin,1234,ND2
+104,Alaka AD,R2021/720/,Business Admin,0838,ND2
+105,Owolade AO,R2022/430/012,Electrical Engineering,4192,ND1
+106,Ajoye JP,R2022/410/006,Civil Engineering,1509,ND1
+107,Adetula OE,R2021/410/003,Civil Engineering,2846,ND2
+108,Ademola IP,R2021/410/002,Civil Engineering,2980,ND2
+109,Ajibade KE,R2021/410/010,Civil Engineering,9379,ND2
+110,Adeshina AS,R2021/410/009,Civil Engineering,2468,ND2
+111,Olayioye OE,R2021/720/005,Business Admin,1610,ND2
+112,Adekunle AM,R2021/720/003,Business Admin,1481,ND2
+113,Emeka U,R2022/430/002,Electrical Engineering,9716,ND1
+114,Elegushi YJ,R2022/420/005,Computer Engineering,2020,ND1
+115,Salami US,R2022/410/003,Civil Engineering,0903,ND1
+116,Oloruntosin S,R2022/610/004,SLT,2086,ND1
+117,Enesi DO,R2022/620/005,Computer Science,2005,ND1
+118,F0ster GA,R2022/610/039,SLT,2026,ND1
+119,Ak0du DA,R2022/710/004,Accountancy,2006,ND1
+120,Owoeye EE,R2022/410/007,Civil Engineering,1234,ND1
+121,Omoruyi BI,R2022/430/008,Electrical Engineering,2525,ND1
+122,Emmanuel PB,R2022/710/022,Accountancy,2005,ND1
+123,Okeleye FA,R2022/620/025,Computer Science,3362,ND1
+124,Awosanya BT,R2022/620/007,Computer Science,2006,ND1
+125,Anyakie Moses,R2022/410/005,Civil Engineering,1313,ND1
+126,Bankole FT,R2022,720/002,Business Admin,2722,ND1
+127,Ogowale CO,R2022/620/002,Computer Science,1598,ND1
+128,Ejembi ST,R22021/520/001,Estate Management,0347,ND2
+129,Titus S,R2022/620/022,Computer Science,2000,ND1
+130,Johnson P,R2021/720/028,Business Admin,2003,ND2
+131,Adekoya OK, R2021/720/028,Business Admin,2004,ND2
+132,Alegbeleye A,R2022/610/001,SLT,2000,ND1
+133,Okoro RC,R2022/620/008,Computer Science,2004,ND1
+134,Omotiloye TE,R2022/610/017,SLT,2021,ND1
+135,Elegbede EO,R2021/710/015,Accountancy,3003,ND2
+136,Maucauley SA,R2022/420/006,Computer Engineering,1436,ND1
+137,Adeshina AI,R2022/710/026,Accountancy,1122,ND1
+138,Anthony JP,R2021/610/033,SLT,9999,ND2
+139,Joseph HA,R2021/610/028,SLT,7777,ND2
+140,Nofiu MO,R2021/610/001,SLT,4444,ND2
+141,Shelu TE,,Civil Engineering,0000,ND2
+142,Adeeko OS,R2021/620/027,Computer Science,1605,ND2
+143,Fajemirokun O,R2022/610/024,SLT,4443,ND1
+144,Adewumi DI,R2022/610/013,SLT,2005,ND1
+145,Osunsan AI,R2022/610/014,SLT,2006,ND1
+146,Idubor P,R2021/710/010,Accountancy,2001,ND2
+147,Udeasa C,R2021/610/023,SLT,2021,ND2
+148,Obisesan SI,R2021/710/001,Accountancy,2005,ND2
+149,Eborogbe DO,R2021/720/021,Business Admin,1022,ND2
+150,Arekumen TP,R2021/610/026,SLT,1970,ND2
+151,Salau TF,R2021/720/018,Business Admin,2003,ND2
+152,Dairo FO,R2021/610/037,SLT,4002,ND2
+153,Amos FC,R2021/610/024,SLT,7332,ND2
+154,Udensi AP,R2021/610/018,SLT,2022,ND2
+155,Ejeh FJ,R2021/720/022,Business Admin,8132,ND2
+156,Tewogbade OC,R2021/710/001,Accountancy,2005,ND2
+157,Osobe FO,R2021/720/039,Business Admin,2002,ND2
+158,Adebambo FA,R2021/610/007,SLT,1888,ND2
+159,Adereti AD,R2021/610/022,SLT,2023,ND2
+160,Omolua EA,R2021/610/009,SLT,1999,ND2
+161,Amoo OA,R2021/720/029,Business Admin,2005,ND2
+162,Onietan E,R2021/720/002,Business Admin,2000,ND2
+163,Marcus OE,R2021/620/026,Computer Science,2018,ND2
+164,Joseph MT, R2022/720/007,Business Admin,2004,ND1
+165,Oloruntoyin EO,R2022/610/007,SLT,0802,ND1
+166,Omokhegbele PO,R2021/610/029,SLT,2222,ND2
+167,Oyeyemi HO,R2021/610/006,SLT,3668,ND2
+168,Obasola O,R2021/610/041,SLT,0805,ND2
+169,Olajire M,R2021/720/025,Business Admin,0809,ND2
+170,Adumekwe C,R2021/420/001,Computer Engineering,3246,ND2
+171,Oyesakin D,R2021/710/009,Accountancy,0202,ND2
+172,Adeuusi D,R2021/710/008,Accountancy,2023,ND2
+173,Onipede FT,R2021/710/012,Accountancy,2004,ND2
+174,Bankole E,R2021/610/016,SLT,2004,ND2
+175,Ahmed F,R2022/610/011,SLT,2007,ND1
+176,Ogunfowowe J,R2022/610/009,SLT,2004,ND1
+177,Adeola F,R2021/620/010,Computer Science,2003,ND2
+178,Sunday B,R2021/610/017,SLT,2004,ND2
+179,Adeyeri P,R2021/610/012,SLT,2002,ND2
+180,Olalere P,R2021/610/034,SLT,2005,ND2
+181,Akintimehin O,R2021/710/005,Accountancy,2002,ND2
+182,Ogbeide M,R2022/720/024,Business Admin,2005,ND2
+183,Onafowokan E,R2021/510/004,Architecture,2050,ND2
+184,Obaro S,R2022/720/018,Business Admin,2006,ND2
+185,Ogini D,R2021/610/021,SLT,2005,ND2
+186,Ewuosho OM,R2021/610/019,SLT,1867,ND2
+187,Adeyemi V,R2021/520/002,Estate Management,0000,ND2
+188,Oyedepo F,R2021/720/013,Business Admin,9000,ND2
+189,Okejodo P,R2021/610/040,SLT,0000,ND2
+190,Adeosun F,R2021/610/027,SLT,0000,ND2
+191,Osagie E,R2022/720/029,Business Admin,0000,ND1
+192,Bello AD,R2022/720/023,Business Admin,0000,ND1
+193,Adams JO,R2021/720/025,Business Admin,0000,ND1
+194,Allagh BN,R2021/720/004,Business Admin,1234,ND2
+195,Ayodele O,R2021/610/005,SLT,0123,ND2
+196,Enechukwu C,R2021/610/038,SLT,1411,ND2
+197,Ojo D,R2021/610/036,SLT,0148,ND2
+198,Ben P,R2022/410/011,Civil Engineering,0000,ND1
+199,Adejumo AO,R2022/620/001,Computer Science,0000,ND1
+200,Abiona DO,R2022/520/004,Esatate Management,0000,ND1
+201,Ajayi OE,R2021/620/013,SLT,0001,ND2
+202,Oladeji OP,R2022/430/011,Elect Engineering,0000,ND2
+203,Obasi VO,R2021/420/006,Computer Engineering,0000,ND2
+204,Oluwagbemi MA,R2021/620/017,Computer Science,1234,ND2
+205,Azubuika D,R2021/430/009,Electrical Engineering,1234,ND2
+206,Abel OE,R2022/510/003,Architecture,1234,ND1
+207,Oladoja M,R2022/420/001,Computer Engineering,1234,ND1
+208,Akintoye M,R2022/420/009,Computer Engineering,1234,ND1
+209,Olofe J,R2022/610/025,SLT,1234,ND1
+210,Ajaguna T,R2022/610/018,SLT,1234,ND1
+211,Ayodele M,R2022/610/032,SLT,1234,ND1
+212,Jeremiah HO,R2021/720/015,Business Admin,1234,ND2
+213,Ajirotutu BE,R2022/720/013,Business Admin,1234,ND1
+214,Njiribeako WC,R2022/720/019,Business Admin,1234,ND1
+215,Akinrinsola M,R2022/620/024,Computer Science,1234,ND1
+216,Olapade K,R2021/620/012,Computer Science,1234,ND1
+217,Akapo D,R2021/520/004,Estate Management,1234,ND2
+218,Sanyaolu F,R2021/720/014,Business Admin,1234,ND2
+219,Jago M,R2021/720/006,Business Admin,1234,ND2
+220,Adelabu M,R2022/610/020,SLT,2007,ND1
+221,Sulaimon D,R2021/610/026,SLT,1234,ND1
+222,Oladeji G,R2022/610/002,SLT,1234,ND1
+223,Adeniji I,R2022/720/027,Business Admin,1234,ND1
+224,Usman O,R2022/620/026,Computer Science,1234,ND1
+225,Ukpabio D,R2021/620/011,Computer Science,1234,ND2
+226,Popoola S,R2022/720/021,Business Admin,2006,ND1
+227,Hakeem IV,R2021/710/016,Accountancy,2004,ND2
+228,Adedipe GA,R2021/710/016,Accountancy,2003,ND2
+229,Uwagaue AO,R2021/410/006,Civil Engineering,2005,ND2
+230,Mac-pepple GI,R2022/410/012,Civil Engineering,2003,ND1
+231,Obiekea Victory J,R2022/610/008,SLT,2004,ND1
+232,Owoeye Adesola,R2022/610/028,SLT,2006,ND1
+233,Ogah Seun V,R2021/710/006,Accountancy,2002,ND2
+234,Adebayo Rebecca,R2022/720/020,Business Admin,2005,ND1
+235,Okeleye Daniella,R2022/430/005,Electrical Engineering,2004,ND1
+236,Williams Abisola,R2021/710/002,Accountancy,2002,ND2
+237,Enitan M,R2022/610/003,SLT,2004,ND1
+238,Afolayan Joseph,R2022/610/031,SLT,2004,ND1
+239,Onwuenwuzor SD,R2022/720/035,Business Admin,2002,ND1
+240,Cletus LC,R2022/520/001,Estate Management,2004,ND1
+241,Adelusi BA,R2021/710/001,Quantity Survey,0803,ND2
+242,Ubochi BU,R2021/710/014,Accountancy,2000,ND2
+243,Olatunji SJ,R2021/610/009,Computer Science,2002,PT
+244,Falana Daniel O,R2021/430/014,Electrical Engineering,1411,ND2
+245,Olorundare Samuel,R2021/430/013,Computer Engineering,2000,ND2
+246,Odoguwa AE,R2021/620/025,Computer Engineering,0800,ND2
+247,Ikuengbon Emmanuel O,R2021/430/008,Electrical Engineering,2008,ND2
+248,Olaniyi Collins O,R2021/620/013,Computer Science,2000,ND2
+249,Oyesola Victor,R2020/620/021,Computer Science,2001,ND2
+250,Idume EE,,Architecture,0000,
+251,Opia VO,R2021/420/002,Computer Engineering,0000,ND2
+252,Iredia Okpogie praise,R2021/510/002,Architecture,2003,ND2
+253,George OG,R2021/620/018,Computer Science,2004,ND2
+254,Olafisoye Promise Pelumi,R2021/720/011,Business Admin,0000,ND2
+255,Adeniji Adelana Ajibede,R2021/620/020,Computer Science,2011,ND2
+256,Adaralegbe Isreal,R2021/520/006,Estate Management,2983,ND1
+257,Adejuwon PO,R2022/610,014, SLT, 1000, ND2
+258,Adubina SA,R2022/720/026,Business Admin,1000,ND1
+259,Oboyinu A,R2021/720/003,Business Admin,0000,ND2
+260,Adumekwe SE,R2021/620/005,Computer Science,1234,ND2
+261,St Jude GO,R2022/510/006, Architecture,1234,ND1
+262,Okeke Favour T,R2021/610/031,SLT,2323,ND1
+263,Okanlawon BJ, R2021/430/009,Electrical Engineering,1234,ND1
+264,Idoko David,R2021/430/006,Electrical Engineering,1234,ND2
+265,Abiodun O, R2021/410/001,Civil Engineering,2486,ND2
+266,Garba MB,R2021/430/005,Electrical Engineering,2222,ND2
+267,Oluwole VO,NULL ,Electrical Engineering,2020,ND2
+268,Adejobi SB,R2022/620/033,Computer Science,1412,ND1
+269,Agbo G,R2022/620/023,Computer Science,1515,ND1
+270,Sotade E,R2022/710/025,Accounting,1234,ND1
+271,Adebowale D,R2021/420/012,Computer Engineering,1234,ND2
+272,Ogunyinka S,R2021/420/005,Computer Engineering,1234,ND2
+273,Sagbola J,R2021/610/003,SLT,1234,ND2
+274,Idowu P,NULL,Accountancy,NULL,NULL
+275,Newton J, R2021/610/003,SLT,1234,ND2
+276,Innocent U, R2021/620/008,Computer Science,1234,ND2
+277,Talabi O,R2022/620/009,Computer Science,1234,ND1
+278,Adewusi D,NULL,Accountancy,NULL,NULL
+279,Samuel S,R2022/720/010,Business Admin,1234,ND1
+280,Onocgie M,R2022/720/030,Business Admin,1234,ND1
+281,AdumekweCHI,NULL,Computer Engineering,NULL ,NULL
+282,Badmus OT, R2021/41/012,Civil Engineering, 1028,ND2
+283,Kujore MO, R2022/420/008, Computer Engineering, 0510, ND1
+284,Abiodun DA,R2022/720/017,Business Admin,2016,ND2
+285,Kolawole IA, R2022/610/008, SLT,NULL, ND2
+286,Asemota PO,R2022/610/023,SLT,2004, ND1
+287,Adejare JA,R2021/410/004, Civil Engineering, 1234, ND2
+288,Okereke CA,R2022/620/030, Computer Science,2006,ND1
+289,Olasunkanmi E,R2022/430/011,Electrical Engineering, 0814,ND1
+290,Raphael MT, R2021/420/007,Computer Engineering,2332,ND2 
+291,Sam wobo MC,R2021/430/007,Electrical Engineering,0203,ND2
+292,Lebari DS,R2021/520/003,Estate Management,2312,ND2
+293,Olanioka IJ,R2022/620/32,Computer Science, 6486,ND1
+294,Adesoye KP, R2022/620/37, Computer Science, 2000, ND1
