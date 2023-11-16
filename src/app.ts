@@ -27,6 +27,7 @@ import uploadStudents from "./controllers/students/uploadStudents";
 import getEvents from "./controllers/events/getEvents";
 import getMe from "./controllers/profile/getMe";
 import dash from "./controllers/profile/dash";
+import summaryAtt from "./controllers/attendance/summaryAtt";
 
 /*  INITIALIZE EXPRESS APP */
 const app = express();
@@ -64,6 +65,9 @@ app.delete("/attendance", verifyAdmin, deleteAtt);
 
 // EVENTS
 app.get("/events", verifyAdmin, getEvents);
+
+// SUMMARY
+app.get("/summary", verifyAdmin, summaryAtt);
 
 
 // profile
